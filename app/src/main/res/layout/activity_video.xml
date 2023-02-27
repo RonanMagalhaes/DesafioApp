@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#263238"
+    android:clipToPadding="false"
+    tools:context=".Video">
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="409dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="394dp"
+        android:background="#2F3D44"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/icVideoDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="#2F3D44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icvideodevice"
+        tools:layout_editor_absoluteY="112dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        style="Nunito Sans,SemiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Câmeras"
+        android:textColor="#9DB3BD"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="117dp" />
+
+    <ImageButton
+        android:id="@+id/icKebab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:background="#2F3D44"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/icoverflow"
+        tools:layout_editor_absoluteY="117dp" />
+
+    <Spinner
+        android:id="@+id/spinner7"
+        android:layout_width="409dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#2F3D44"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="163dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="#2F3D44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icvideodevice"
+        tools:layout_editor_absoluteY="176dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        style="Nunito Sans,SemiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Câmeras 2"
+        android:textColor="#9DB3BD"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <ImageButton
+        android:id="@+id/icKebab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:background="#2F3D44"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/icoverflow"
+        tools:layout_editor_absoluteY="176dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="16dp"
+        android:background="#9DB3BD"
+        app:backgroundTint="#263238"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:layout_editor_absoluteX="327dp" />
+
+    <SearchView
+        android:layout_width="328dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:background="#9DB3BD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
