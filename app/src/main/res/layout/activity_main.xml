@@ -20,7 +20,7 @@
             style="@style/Widget.AppCompat.SearchView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#9DB3BD"
+            android:background="#2F3D44"
             android:contentDescription=""
             android:hint=""
             app:defaultMarginsEnabled="true"

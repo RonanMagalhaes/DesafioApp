@@ -8,6 +8,32 @@
     android:clipToPadding="false"
     tools:context=".Video">
 
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <com.google.android.material.search.SearchBar
+        android:id="@+id/search_bar"
+        style="@style/Widget.AppCompat.SearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#2F3D44"
+        android:contentDescription=""
+        android:hint=""
+        app:defaultMarginsEnabled="true"
+        app:layout_anchorGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationContentDescription="@string/app_name"
+        app:navigationIcon="@drawable/icsearch" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
     <Spinner
         android:id="@+id/spinner4"
         android:layout_width="409dp"
@@ -17,7 +43,6 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="394dp"
         android:background="#2F3D44"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,7 +55,8 @@
         android:background="#2F3D44"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/icvideodevice"
-        tools:layout_editor_absoluteY="112dp" />
+        tools:layout_editor_absoluteY="112dp"
+        tools:ignore="MissingConstraints"/>
 
     <TextView
         android:id="@+id/textView5"
@@ -40,17 +66,19 @@
         android:text="Câmeras"
         android:textColor="#9DB3BD"
         tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="117dp" />
+        tools:layout_editor_absoluteY="117dp"
+        tools:ignore="MissingConstraints"/>
 
     <ImageButton
-        android:id="@+id/icKebab"
+        android:id="@+id/icKebab2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:background="#2F3D44"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/icoverflow"
-        tools:layout_editor_absoluteY="117dp" />
+        tools:layout_editor_absoluteY="117dp"
+        tools:ignore="MissingConstraints"/>
 
     <Spinner
         android:id="@+id/spinner7"
@@ -61,7 +89,8 @@
         android:background="#2F3D44"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="163dp" />
+        tools:layout_editor_absoluteY="163dp"
+        tools:ignore="MissingConstraints"/>
 
     <ImageButton
         android:id="@+id/imageButton15"
@@ -71,7 +100,8 @@
         android:background="#2F3D44"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/icvideodevice"
-        tools:layout_editor_absoluteY="176dp" />
+        tools:layout_editor_absoluteY="176dp"
+        tools:ignore="MissingConstraints"/>
 
     <TextView
         android:id="@+id/textView7"
@@ -81,7 +111,8 @@
         android:text="Câmeras 2"
         android:textColor="#9DB3BD"
         tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="181dp" />
+        tools:layout_editor_absoluteY="181dp"
+        tools:ignore="MissingConstraints"/>
 
     <ImageButton
         android:id="@+id/icKebab"
@@ -91,30 +122,19 @@
         android:background="#2F3D44"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/icoverflow"
-        tools:layout_editor_absoluteY="176dp" />
+        tools:layout_editor_absoluteY="176dp"
+        tools:ignore="MissingConstraints"/>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:layout_gravity="bottom|end"
-        android:layout_marginBottom="16dp"
-        android:background="#9DB3BD"
-        app:backgroundTint="#263238"
+    <include
+        android:id="@+id/my_bottom_bar"
+        layout="@layout/activity_bottom_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:srcCompat="@android:drawable/ic_input_add"
-        tools:layout_editor_absoluteX="327dp" />
-
-    <SearchView
-        android:layout_width="328dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="16dp"
-        android:background="#9DB3BD"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
